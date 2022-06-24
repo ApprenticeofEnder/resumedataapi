@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'dataapi.urls'
+ROOT_URLCONF = 'resumedataapi.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'dataapi.wsgi.application'
+WSGI_APPLICATION = 'resumedataapi.wsgi.application'
 
 
 # Database
