@@ -42,3 +42,13 @@ class Project(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+
+class Contact(models.Model):
+    icon = models.CharField(max_length=50)
+    data = models.CharField(max_length=150)
+    contact_name = models.CharField(max_length=50)
+    link = models.CharField(max_length=150)
+
+    def __str__(self) -> str:
+        return self.contact_name

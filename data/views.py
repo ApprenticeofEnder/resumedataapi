@@ -19,5 +19,10 @@ def articles(request):
     serializer = ArticleSerializer(article_list, many=True)
     return JsonResponse(serializer.data, safe=False)
 
-def main(request):
+def contacts(request):
+    contact_list = Contact.objects.all()
+    serializer = ContactSerializer(contact_list, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+def index(request):
     return JsonResponse({"message": "Robert Babaev's Resume Data API"})

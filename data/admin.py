@@ -15,7 +15,11 @@ class ExperienceSARAdmin(admin.ModelAdmin):
 class ProjectAdmin(admin.ModelAdmin):
     pass
 
+class ContactAdmin(admin.ModelAdmin):
+    pass
+
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Experience, ExperienceAdmin)
 admin.site.register(ExperienceSAR, ExperienceSARAdmin)
 admin.site.register(Project, ProjectAdmin)
+admin.site.register(Contact, ContactAdmin)
