@@ -31,8 +31,14 @@ class Article(models.Model):
     title = models.CharField(max_length=150)
     link = models.CharField(max_length=150)
 
+    def __str__(self) -> str:
+        return self.title
+
 
 class Project(models.Model):
     title = models.CharField(max_length=150)
     link = models.CharField(max_length=150)
     description = models.TextField()
+
+    def __str__(self) -> str:
+        return self.title

@@ -16,7 +16,9 @@ class ExperienceSerializer(serializers.ModelSerializer):
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
+        fields = ['title', 'link']
 
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
+        fields = ['title', 'link', 'description']

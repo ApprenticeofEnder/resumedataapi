@@ -15,8 +15,8 @@ def projects(request):
     return JsonResponse(serializer.data, safe=False)
 
 def articles(request):
-    article_list = Project.objects.all()
-    serializer = ProjectSerializer(article_list, many=True)
+    article_list = Article.objects.all()
+    serializer = ArticleSerializer(article_list, many=True)
     return JsonResponse(serializer.data, safe=False)
 
 def main(request):
