@@ -1,9 +1,7 @@
 FROM python:3.10-slim-bullseye as prod_build
 
-ARG DJANGO_ENV
-
-ENV DJANGO_ENV=${DJANGO_ENV} \
-  # python:
+ENV \
+  # python: \
   PYTHONFAULTHANDLER=1 \
   PYTHONUNBUFFERED=1 \
   PYTHONHASHSEED=random \
