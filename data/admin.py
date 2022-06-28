@@ -7,7 +7,7 @@ class ArticleAdmin(admin.ModelAdmin):
     pass
 
 class ExperienceAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("title", "company", "start_date")
 
 class ExperienceSARAdmin(admin.ModelAdmin):
     pass
