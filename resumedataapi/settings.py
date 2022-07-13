@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DJANGO_ENV") != "prod"
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'resume.data.robertbabaev.tech', 'api']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'resume-data.robertbabaev.tech', 'api']
 
 
 # Application definition
