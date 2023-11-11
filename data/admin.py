@@ -15,7 +15,7 @@ class ExperienceAdmin(admin.ModelAdmin):
     list_display = ("title", "company", "start_date")
 
 class ExperienceSARAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("experience", "index", "statement")
 
 class ProjectAdmin(admin.ModelAdmin):
     pass
